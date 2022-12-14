@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: 'ap-photo',
-    templateUrl: 'PhotoComponent.html'
+    templateUrl: 'Photo.Component.html'
 })
 export class PhotoComponent {
     description = 'Jotaro';
