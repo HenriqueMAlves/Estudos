@@ -1,18 +1,23 @@
-<div class="graph-container">
-  <div class="header">
-    <h1>Eventos</h1>
-    <div class="filters">
-      <!-- adicionar uns filtros de data e tudo mais -->
-    </div>
-  </div>
-  <div >
-    <app-grafico variant="grouped-vertical-bar" [data]="multi" xAxisLabel="Dia" yAxisLabel="Quantidade Eventos" ></app-grafico>
-  </div>
+<main class="dark">
+  <div class="grid-container">
+    <div class="ui-g-12 mt-1 ml-1">
 
-  <div class="ui-g-12">
-    <!-- Adicionar uns checkbox aqui -->
-    <p-checkbox class="ui-g-12 ui-md-4 access-alarm" name="groupname" (onChange)="filtroPorEventosAtivos()" [binary]="liberadoCheckBox" label="Alarmes" [(ngModel)]="filtros.alarmes"></p-checkbox>
-    <p-checkbox class="ui-g-12 ui-md-4 access-denied" name="groupname" (onChange)="filtroPorEventosAtivos()" [binary]="liberadoCheckBox" label="Avisos / Acesso negado" [(ngModel)]="filtros.avisos_e_acesso_negado"></p-checkbox>
-    <p-checkbox class="ui-g-12 ui-md-4 access-allowed" name="groupname" (onChange)="filtroPorEventosAtivos()" [binary]="liberadoCheckBox" label="Acesso liberado" [(ngModel)]="filtros.acesso_liberado"></p-checkbox>
-  </div>
-</div>
+      <div class="graph-container">
+        <div class="header">
+          <h1>Eventos</h1>
+          <div class="filters">
+            <!-- adicionar uns filtros de data e tudo mais -->
+          </div>
+        </div>
+        <div >
+          <app-grafico variant="grouped-vertical-bar" [data]="multi" xAxisLabel="Dia" yAxisLabel="Quantidade Eventos" ></app-grafico>
+        </div>
+
+        <div class="ui-g-12">
+          <!-- Adicionar uns checkbox aqui -->
+          <p-checkbox class="ui-g-12 ui-md-4 access-alarm" name="groupname" (onChange)="filtroPorEventosAtivos()" [binary]="liberadoCheckBox" label="Alarmes" [(ngModel)]="filtros.alarmes"></p-checkbox>
+          <p-checkbox class="ui-g-12 ui-md-4 access-denied" name="groupname" (onChange)="filtroPorEventosAtivos()" [binary]="liberadoCheckBox" label="Avisos / Acesso negado" [(ngModel)]="filtros.avisos_e_acesso_negado"></p-checkbox>
+          <p-checkbox class="ui-g-12 ui-md-4 access-allowed" name="groupname" (onChange)="filtroPorEventosAtivos()" [binary]="liberadoCheckBox" label="Acesso liberado" [(ngModel)]="filtros.acesso_liberado"></p-checkbox>
+        </div>
+      </div>
+    </div>
