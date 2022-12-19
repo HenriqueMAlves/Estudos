@@ -9,11 +9,13 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { GraficoComponent } from './grafico/grafico.component';
 import { CommonModule } from '@angular/common';
 import {CheckboxModule} from 'primeng/checkbox';
+import { DashComponent } from './dash/dash.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GraficoComponent
+    GraficoComponent,
+    DashComponent
   ],
   imports: [
     BrowserModule,
