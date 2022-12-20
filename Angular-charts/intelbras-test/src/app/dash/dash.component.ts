@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { data } from './data';
+import { data, data2 } from './data';
 
 @Component({
   selector: 'app-dash',
@@ -30,12 +30,14 @@ export class DashComponent implements OnInit {
 
   ngOnInit() {
     this.multi.map(data => {
-      for(var i=0; i<3; i++) {    
-        if((data.series[i].value + 100) > this.yScaleMax) {
-          this.yScaleMax = data.series[i].value + 100;      
+
+      for(var i=0; i<3; i++) {  
+        if(data.series[i].value > 100) {
+          if((data.series[i].value + 100) > this.yScaleMax) {
+            this.yScaleMax = data.series[i].value + 100;      
+          }
         }
       }
-      
     });
   }
 }

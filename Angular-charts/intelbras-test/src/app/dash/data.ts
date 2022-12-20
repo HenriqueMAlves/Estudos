@@ -82,3 +82,88 @@ export var data: any[] = [
       ]
     }
   ];
+
+  export var data2: any[] = [
+    {
+      name: '01/11',
+      series: [
+        {
+          name: 'permitidos',
+          value: 70
+        },
+        {
+          name: 'negados',
+          value: 60
+        },
+        {
+          name: 'alarmes',
+          value: 30
+        }
+      ]
+    },
+    {
+      name: '02/11',
+      series: [
+        {
+          name: 'permitidos',
+          value: 80
+        },
+        {
+          name: 'negados',
+          value: 50
+        },
+        {
+          name: 'alarmes',
+          value: 10
+        }
+      ]
+    },    {
+      name: '03/11',
+      series: [
+        {
+          name: 'permitidos',
+          value: 60
+        },
+        {
+          name: 'negados',
+          value: 70
+        },
+        {
+          name: 'alarmes',
+          value: 20
+        }
+      ]
+    },    {
+      name: '04/11',
+      series: [
+        {
+          name: 'permitidos',
+          value: 80
+        },
+        {
+          name: 'negados',
+          value: 50
+        },
+        {
+          name: 'alarmes',
+          value: 10
+        }
+      ]
+    },    {
+      name: '05/11',
+      series: [
+        {
+          name: 'permitidos',
+          value: 80
+        },
+        {
+          name: 'negados',
+          value: 50
+        },
+        {
+          name: 'alarmes',
+          value: 10
+        }
+      ]
+    }
+  ];

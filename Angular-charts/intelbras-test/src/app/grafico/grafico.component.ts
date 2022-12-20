@@ -24,6 +24,8 @@ export class GraficoComponent implements OnInit {
   @Input() groupPadding: number = 16;
   @Input() tooltipDisabled: boolean = false;
   @Input() yScaleMax: number = 1000;
+  @Input() xAxisTicks: number[] = [];
+  @Input() yAxisTicks: number[] = [];
 
   @Input() colorScheme = {
     domain: ['#5AA454', '#C7B42C', '#AAAAAA']
