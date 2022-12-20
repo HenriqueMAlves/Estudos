@@ -10,7 +10,20 @@
           </div>
         </div>
         <div >
-          <app-grafico variant="grouped-vertical-bar" [data]="multi" xAxisLabel="Dia" yAxisLabel="Quantidade Eventos" ></app-grafico>
+          <app-grafico 
+          variant="grouped-vertical-bar" 
+          [data]="multi"
+          [colorScheme]="colorScheme"
+          xAxisLabel="Dia" 
+          yAxisLabel="Quantidade Eventos"
+          [gradient]="false"
+          [showLegend]="false"
+          [roundDomains]="false"
+          [barPadding]="5"
+          [groupPadding]="55"
+          [tooltipDisabled]="false"
+          [yScaleMax]="yScaleMax">
+        </app-grafico>
         </div>
 
         <div class="ui-g-12">

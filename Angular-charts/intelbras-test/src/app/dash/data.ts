@@ -4,15 +4,15 @@ export var data: any[] = [
       series: [
         {
           name: 'permitidos',
-          value: 60
+          value: 700
         },
         {
           name: 'negados',
-          value: 10
+          value: 600
         },
         {
           name: 'alarmes',
-          value: 0
+          value: 300
         }
       ]
     },
@@ -21,15 +21,15 @@ export var data: any[] = [
       series: [
         {
           name: 'permitidos',
-          value: 60
+          value: 800
         },
         {
           name: 'negados',
-          value: 5
+          value: 500
         },
         {
           name: 'alarmes',
-          value: 1
+          value: 100
         }
       ]
     },    {
@@ -37,15 +37,15 @@ export var data: any[] = [
       series: [
         {
           name: 'permitidos',
-          value: 30
+          value: 600
         },
         {
           name: 'negados',
-          value: 0
+          value: 700
         },
         {
           name: 'alarmes',
-          value: 2
+          value: 200
         }
       ]
     },    {
@@ -53,15 +53,15 @@ export var data: any[] = [
       series: [
         {
           name: 'permitidos',
-          value: 20
+          value: 800
         },
         {
           name: 'negados',
-          value: 10
+          value: 500
         },
         {
           name: 'alarmes',
-          value: 0
+          value: 100
         }
       ]
     },    {
@@ -69,15 +69,15 @@ export var data: any[] = [
       series: [
         {
           name: 'permitidos',
-          value: 90
+          value: 800
         },
         {
           name: 'negados',
-          value: 30
+          value: 500
         },
         {
           name: 'alarmes',
-          value: 2
+          value: 100
         }
       ]
     }

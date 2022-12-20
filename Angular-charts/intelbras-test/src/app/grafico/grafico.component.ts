@@ -7,20 +7,25 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class GraficoComponent implements OnInit {
   multi: any[];
-  view: any[] = [700, 400];
 
   // options
-  showXAxis: boolean = true;
-  showYAxis: boolean = true;
-  gradient: boolean = true;
-  showLegend: boolean = true;
-  showXAxisLabel: boolean = true;
-  showYAxisLabel: boolean = true;
-  legendPosition: 'below' | 'right'  = 'below';
-  doughnut: boolean = true;
-  arcWidth: number = 0.25
+  
+  @Input() showXAxis: boolean = true;
+  @Input() showYAxis: boolean = true;
+  @Input() gradient: boolean = true;
+  @Input() showLegend: boolean = true;
+  @Input() showXAxisLabel: boolean = true;
+  @Input() showYAxisLabel: boolean = true;
+  @Input() legendPosition: 'below' | 'right'  = 'below';
+  @Input() arcWidth: number = 0.25;
+  @Input() roundDomains: boolean = false;
+  @Input() noBarWhenZero: boolean = false;
+  @Input() barPadding: number = 3;
+  @Input() groupPadding: number = 16;
+  @Input() tooltipDisabled: boolean = false;
+  @Input() yScaleMax: number = 1000;
 
-  colorScheme = {
+  @Input() colorScheme = {
     domain: ['#5AA454', '#C7B42C', '#AAAAAA']
   };
 
